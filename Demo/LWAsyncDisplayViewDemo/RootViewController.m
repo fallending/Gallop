@@ -10,10 +10,7 @@
 #import "MomentsViewController.h"
 #import "ArticleListViewController.h"
 #import "ImageDemoViewController.h"
-
-
-
-
+#import "WebViewAutoHeightController.h"
 
 
 @interface RootViewController ()
@@ -44,7 +41,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -66,6 +63,8 @@
         case 3:
             cell.textLabel.text = @"使用Gallop进行HTML解析示例";
             break;
+        case 4:
+            cell.textLabel.text = @"webview自适应高度";
     }
     return cell;
 }
@@ -94,6 +93,10 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 4: {
+            WebViewAutoHeightController *vc = [[WebViewAutoHeightController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }
 }
 

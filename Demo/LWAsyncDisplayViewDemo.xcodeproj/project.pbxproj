@@ -108,6 +108,8 @@
 		B0F991D71D937FBD00D7B529 /* LWImageBrowserButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F991D61D937FBD00D7B529 /* LWImageBrowserButton.m */; };
 		B0F991DA1D93802E00D7B529 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F991D91D93802E00D7B529 /* UIImage+ImageEffects.m */; };
 		B0F991DD1D93859000D7B529 /* UIImage+Gallop.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F991DC1D93859000D7B529 /* UIImage+Gallop.m */; };
+		F6D631BD1EADC26F002286DB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F6D631BA1EADC26F002286DB /* index.html */; };
+		F6D631BE1EADC26F002286DB /* WebViewAutoHeightController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D631BC1EADC26F002286DB /* WebViewAutoHeightController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -311,6 +313,9 @@
 		B0F991D91D93802E00D7B529 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Others/LWImageBrowser/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		B0F991DB1D93859000D7B529 /* UIImage+Gallop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Gallop.h"; path = "../Gallop/UIImage+Gallop.h"; sourceTree = "<group>"; };
 		B0F991DC1D93859000D7B529 /* UIImage+Gallop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Gallop.m"; path = "../Gallop/UIImage+Gallop.m"; sourceTree = "<group>"; };
+		F6D631BA1EADC26F002286DB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		F6D631BB1EADC26F002286DB /* WebViewAutoHeightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewAutoHeightController.h; sourceTree = "<group>"; };
+		F6D631BC1EADC26F002286DB /* WebViewAutoHeightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewAutoHeightController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +373,7 @@
 		011DFA1C1C987CD6000410D7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				F6D631B91EADC26F002286DB /* Patch */,
 				B085B3441CB69C7B00087739 /* Vendors */,
 				0134D12A1D16BDEE00FB91FF /* Root */,
 				01F58BBD1D85AA1D0089DB02 /* LWTextStorageDemo */,
@@ -718,6 +724,16 @@
 			name = LWImageBrowser;
 			sourceTree = "<group>";
 		};
+		F6D631B91EADC26F002286DB /* Patch */ = {
+			isa = PBXGroup;
+			children = (
+				F6D631BA1EADC26F002286DB /* index.html */,
+				F6D631BB1EADC26F002286DB /* WebViewAutoHeightController.h */,
+				F6D631BC1EADC26F002286DB /* WebViewAutoHeightController.m */,
+			);
+			path = Patch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -777,6 +793,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				016A10331D9426B400268B4F /* articlelist.plist in Resources */,
+				F6D631BD1EADC26F002286DB /* index.html in Resources */,
 				B0F423191D476C19007E8FD0 /* LICENSE in Resources */,
 				011DFA2A1C987CD6000410D7 /* Assets.xcassets in Resources */,
 			);
@@ -830,6 +847,7 @@
 				012EDDEA1D931D08009AFA90 /* LWImageProcessor.m in Sources */,
 				012EDE4B1D931FB1009AFA90 /* LWHTMLParser.m in Sources */,
 				0106E7CF1E57303C00C5A3C6 /* UIImage+WebP.m in Sources */,
+				F6D631BE1EADC26F002286DB /* WebViewAutoHeightController.m in Sources */,
 				B0F991CD1D937EA000D7B529 /* LWAlertView.m in Sources */,
 				0106E7CA1E57303C00C5A3C6 /* SDWebImageManager.m in Sources */,
 				0106E7C21E57303C00C5A3C6 /* NSData+ImageContentType.m in Sources */,
