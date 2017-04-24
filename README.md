@@ -3,6 +3,11 @@
 
 # Gallop v0.6.1
 
+1. LWTextStorage使用示例
+2. LWImageStorage使用示例
+3. 使用Gallop构建Feed List 示例
+4. 使用Gallop进行HTML解析示例
+5. webview自适应高度
 
 ## About 
 
